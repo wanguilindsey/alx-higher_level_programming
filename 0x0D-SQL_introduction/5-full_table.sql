@@ -6,9 +6,12 @@ USE hbtn_0c_0;
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'localhost';
 FLUSH PRIVILEGES;
 
--- Write a script that creates a table called first_table in the current database
+-- Write a script that creates a table called first_table in the current databasie
 
 CREATE TABLE IF NOT EXISTS first_table (
     id INT,
     name VARCHAR(256)
 );
+
+-- Prints full description of first_table
+SHOW CREATE table first_table;
