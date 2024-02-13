@@ -1,13 +1,12 @@
 #!/usr/bin/node
 /**
- * function to reverse a list
- * @param {list} list - list to examine
- * @returns {number} - the reversed version of a list
+ * function  that prints the number of arguments already printed and the
+ * new argument value
+ * @param {item} str - argument passed to function
+ * @returns void
  */
-exports.esrever = function (list) {
-  const newList = [];
-  for (let i = list.length - 1; i >= 0; i--) {
-    newList.push(list[i]);
-  }
-  return newList;
+let narg = 0;
+exports.logMe = function (item) {
+  console.log(`${narg}: ${item}`);
+  narg++;
 };
