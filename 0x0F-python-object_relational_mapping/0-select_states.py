@@ -2,6 +2,7 @@
 import MySQLdb
 import sys
 
+
 def main():
     # Check if all three arguments are provided
     if len(sys.argv) != 4:
@@ -34,6 +35,7 @@ def main():
 
     # Disconnect from server
     db.close()
+
 
 if __name__ == "__main__":
     main()
